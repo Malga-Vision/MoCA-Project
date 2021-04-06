@@ -1,5 +1,9 @@
-The MoCA dataset project
-========================================================
+# The MoCA project
+
+### The MoCA dataset, kinematic and multi-view visual streams of fine-grained cooking actions
+
+=============================================================================================
+
 #### Description and motivations
 The Cooking Actions Dataset is a multimodal dataset in which we collect MoCap data and video sequences acquired from multiple views of upper body actions in a cooking scenario. 
 It has been collected with the specific purpose of investigating view-invariant action properties in both biological and artificial systems, and in this sense it may be of interest for multiple research communities in the cognitive and computational domains. Beside addressing classical action recognition tasks, the dataset enables research on different nuances of action understanding, from the segmentation of action primitives robust across different sensors and viewpoints, to the detection of actions categories depending on their dynamic evolution or the goal. 
@@ -75,5 +79,9 @@ Type help "name of the function" in the Command Window for more information on s
 REFERENCE
 =============
 Should you use this dataset in your publication please cite the following:
-D. Malafronte, G.Goyal, A.Vignolo. F.Odone, N.Noceti. Investigating the use of space-time primitives to understand human movements. In ICIAP 2017
+
+The MoCA dataset, kinematic and multi-view visual streams of fine-grained cooking actions
+E. Nicora, G. Goyal, N. Noceti, A. Vignolo, A. Sciutti, F. Odone
+Scientific Data 7 (1), 1-15
+
 
