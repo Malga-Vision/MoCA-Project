@@ -10,6 +10,10 @@ It has been collected with the specific purpose of investigating view-invariant 
 
 ![Alt text](Images/setting.jpg?raw=true "Acquisition setup")
 
+<p align="center">
+  <img src="Images/setting.jpg" width="350" title="hover text">
+</p>
+
 The dataset includes 20 cooking actions involving one or two arms of a volunteer, some of them including tools which may require different forces. Three different view-points have been considered for the acquisitions, i.e. lateral, egocentric, and frontal. For each action a training and a test sequence is available, each containing, on average, 25 repetitions of the action. Furthermore, acquisitions of more structured activities (we called scenes) are included, in which the actions are performed in sequence for a final, more complex goal. Specifically, scenes are composed as following:
 
 An annotation is available, which includes the segmentation of single action instances in terms of time instants in the MOCAP reference frame. A function then allows to map the time instants on the corresponding frame in the video sequences. In addition, functionalities to load, segment, and visualize the data are also provided, as described in the following. 
