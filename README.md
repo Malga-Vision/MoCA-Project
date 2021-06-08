@@ -1,4 +1,8 @@
 # The MoCA project
+<p align="right">
+  <img src="Images/setting.jpg" width="350" title="hover text">
+</p>
+
 
 ### The MoCA dataset, kinematic and multi-view visual streams of fine-grained cooking actions
 
@@ -7,12 +11,6 @@
 #### Description and motivations
 The Cooking Actions Dataset is a multimodal dataset in which we collect MoCap data and video sequences acquired from multiple views of upper body actions in a cooking scenario. 
 It has been collected with the specific purpose of investigating view-invariant action properties in both biological and artificial systems, and in this sense it may be of interest for multiple research communities in the cognitive and computational domains. Beside addressing classical action recognition tasks, the dataset enables research on different nuances of action understanding, from the segmentation of action primitives robust across different sensors and viewpoints, to the detection of actions categories depending on their dynamic evolution or the goal. 
-
-![Alt text](Images/setting.jpg?raw=true "Acquisition setup")
-
-<p align="center">
-  <img src="Images/setting.jpg" width="350" title="hover text">
-</p>
 
 The dataset includes 20 cooking actions involving one or two arms of a volunteer, some of them including tools which may require different forces. Three different view-points have been considered for the acquisitions, i.e. lateral, egocentric, and frontal. For each action a training and a test sequence is available, each containing, on average, 25 repetitions of the action. Furthermore, acquisitions of more structured activities (we called scenes) are included, in which the actions are performed in sequence for a final, more complex goal. Specifically, scenes are composed as following:
 
