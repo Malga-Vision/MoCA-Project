@@ -2,8 +2,7 @@
   <img src="Images/MoCA_logo(1).png" width="450" title="hover text">
 
 
-## The MoCA dataset
-	Kinematic and multi-view visual streams of fine-grained cooking actions
+## The MoCA dataset: kinematic and multi-view visual streams of fine-grained cooking actions
 </p>
 
 ### Description and motivations
