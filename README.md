@@ -3,7 +3,7 @@
 
 
 ## The MoCA dataset
-## Kinematic and multi-view visual streams of fine-grained cooking actions
+	Kinematic and multi-view visual streams of fine-grained cooking actions
 </p>
 
 ### Description and motivations
