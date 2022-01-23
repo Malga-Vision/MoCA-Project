@@ -2,7 +2,8 @@
 
 ## The MoCA dataset, kinematic and multi-view visual streams of fine-grained cooking actions
 
-=============================================================================================
+
+=============
 
 ### Description and motivations
 The Cooking Actions Dataset is a multimodal dataset in which we collect MoCap data and video sequences acquired from multiple views of upper body actions in a cooking scenario. 
@@ -11,9 +12,9 @@ It has been collected with the specific purpose of investigating view-invariant 
   <img src="Images/setting.jpg" width="450" title="hover text">
 </p>
 
-The dataset includes 20 cooking actions involving one or two arms of a volunteer, some of them including tools which may require different forces. Three different view-points have been considered for the acquisitions, i.e. lateral, egocentric, and frontal. For each action a training and a test sequence is available, each containing, on average, 25 repetitions of the action. Furthermore, acquisitions of more structured activities (we called scenes) are included, in which the actions are performed in sequence for a final, more complex goal. Specifically, scenes are composed as following:
+The dataset includes 20 cooking actions, involving either a single or both arms of the volunteer, some of them including tools which may require different forces. Three different view-points have been considered for the acquisitions, i.e. lateral, egocentric, and frontal. For each action a training and a test sequence is available, each containing, on average, 25 repetitions of the action. Furthermore, acquisitions of more structured activities are included, in which the actions are performed in sequence for a final, more complex goal. 
 
-An annotation is available, which includes the segmentation of single action instances in terms of time instants in the MOCAP reference frame. A function then allows to map the time instants on the corresponding frame in the video sequences. In addition, functionalities to load, segment, and visualize the data are also provided, as described in the following. 
+An annotation is available, which includes the segmentation of single action instances in terms of time instants in the MoCap reference frame. A function then allows to map the time instants on the corresponding frame in the video sequences. In addition, functionalities to load, segment, and visualize the data are also provided in Python and Matlab.
 
 ### Technical information
 MATLAB structures containing the MoCap streams are composed by the following fields:
@@ -21,42 +22,10 @@ MATLAB structures containing the MoCap streams are composed by the following fie
 - index, array containing segmentation indices, this is the information used in segmentAction to separate the streams;
 - labels (present only in the scenes structures), array containing the labels of the actions that succeed one another in the scene (in temporal order). True labels include also \enquote{pause}, a moment in the sequence in which the actor does not move;
 
-The point of view of the video recordings is specified by the number at the end of each filename: 
-- "*_0.avi" lateral PoV;
-- "*_1.avi" egocentric PoV;
-- "*_2.avi" frontal PoV;
-
-### List of the actions included
-1. Shredding a carrot 
-2. Cutting the bread
-3. Cleaning a dish 
-4. Eating
-5. Beating eggs 
-6. Squeezing a lemon
-7. Mincing with a mezzaluna 
-8. Mixing in a bowl
-9. Open a bottle 
-10. Turn the frittata in a pan
-11. Pestling 
-12. Pouring water in multiple containers
-13. Pouring water in a mug 
-14. Reaching an object
-15. Rolling the dough 
-16. Washing the salad
-17. Salting 
-18. Spreading cheese on a slice of bread
-19. Cleaning the table 
-20. Transporting an object
-
-### Scenes description
-- Scene #1 The actor mixes ingredients in a bowl, then adds salt and pours some water. Finally the ingredients are mixed again.
-- Scene #2 The actor reaches a slice of cheese, grabs it and shreds it. Then the actor moves the cheese back to the original position.
-- Scene #3 The actor reaches a bottle, moves it and removes the cap. Some water is poured in a bowl, then the bottle is put in the previous position. The actor then mixes the ingredients in the bowl.
-- Scene #4 The actor cuts a slice of bread and spreads some nuts cream on it, then the actor eats it.
-- Scene #5 The actor reaches a lemon and squeezes it. Then all the objects are moved away and the actor cleans the table.
+The point of view of the video recordings is specified by the number at the end of each filename: "*_0.avi" for the lateral PoV, "*_1.avi" for a simulated egocentric PoV (the camera is placed above the head of the actor), "*_2.avi" for the frontal PoV.
 
 ### Available functions
-Loading and visualisation functions (in MATLAB) allow users to access RGB and Kinematic streams.
+Loading and visualisation functions (both available in MATLAB and Python) allow users to access RGB and Kinematic streams.
 
 Functions "loadDataset" and "loadAction" allow the user to load and save the Cooking Actions Dataset in an easy-to-use data structure. 
 "loadAction" gives the user the possibility of loading only part of the Cooking Actions Dataset, as for instance an action, a marker, or an instance.
@@ -75,7 +44,7 @@ Three types of visualisation functions are available:
 - "visualiseSkeleton", for a simulation of the arm executing the complete action using MoCap data
 - "initSynch" and "synchronizedView" for a joint view of RGB and Kinematic data.
 	
-All the functions provided can be used also on the test scenes in /data/mocap/scenes.
+All the functions provided can be used also on the testing scenes in /data/mocap/scenes.
 
 Type help "name of the function" in the Command Window for more information on syntax and on how to use the functions.
 	
@@ -87,4 +56,5 @@ The MoCA dataset, kinematic and multi-view visual streams of fine-grained cookin
 E. Nicora, G. Goyal, N. Noceti, A. Vignolo, A. Sciutti, F. Odone
 Scientific Data 7 (1), 1-15
 
+Further information can be found either on the main journal paper or at this <a href="insert link here">link</a>
 
