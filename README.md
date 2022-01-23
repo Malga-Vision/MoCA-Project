@@ -3,7 +3,7 @@
 </p>
 
 ## The MoCA dataset, kinematic and multi-view visual streams of fine-grained cooking actions
-=============
+
 
 ### Description and motivations
 The Cooking Actions Dataset is a multimodal dataset in which we collect MoCap data and video sequences acquired from multiple views of upper body actions in a cooking scenario. 
