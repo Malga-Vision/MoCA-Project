@@ -56,5 +56,5 @@ The MoCA dataset, kinematic and multi-view visual streams of fine-grained cookin
 E. Nicora, G. Goyal, N. Noceti, A. Vignolo, A. Sciutti, F. Odone
 Scientific Data 7 (1), 1-15
 
-Further information can be found either on the main journal paper or at this <a href="insert link here">link</a>
+For further information please refer to the above pubblication or the dataset webpage at this <a href="https://sites.google.com/view/themocaproject/welcome">link</a>
 
